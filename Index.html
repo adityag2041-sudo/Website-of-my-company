@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiva Guru Food Products</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-line factory"></div>
+  <div class="bg-line jar"></div>
+  <div class="bg-line wheat"></div>
+
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo">🌾</div>
+      <div>
+        <h2>Shiva Guru</h2>
+        <p>Food Products</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#quality">Quality</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-btn" href="https://wa.me/9779845094574" target="_blank">☎ Order on WhatsApp</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="small-icon">🌿</div>
+      <h1>Shiva Guru</h1>
+      <h3>Food Products</h3>
+      <p class="slogan">Serves with love</p>
+
+      <p class="hero-text">
+        We are committed to manufacturing high-quality, hygienic and nutritious food products
+        for a healthier tomorrow.
+      </p>
+
+      <a href="#products" class="main-btn">Explore Our Products</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="divider"></div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section id="quality" class="quality">
+    <div class="quality-box">
+      <div>
+        <span>🛡</span>
+        <h4>Premium Quality</h4>
+        <p>Best quality in every product.</p>
+      </div>
+
+      <div>
+        <span>🌱</span>
+        <h4>Natural Ingredients</h4>
+        <p>Carefully selected ingredients.</p>
+      </div>
+
+      <div>
+        <span>🏭</span>
+        <h4>Hygienic Process</h4>
+        <p>Manufactured in a clean environment.</p>
+      </div>
+
+      <div>
+        <span>♡</span>
+        <h4>Customer Satisfaction</h4>
+        <p>Customer happiness is our priority.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <div class="divider small"></div>
+
+        <p><span class="circle-icon">✉</span> Shivagurufoodproducts@gmail.com</p>
+        <p><span class="circle-icon">☎</span> 9845094574</p>
+        <p><span class="circle-icon">📍</span> Khairahani-8, Parsa, Chitwan, Nepal</p>
+      </div>
+
+      <div class="qr-box">
+        <h2>Chat With Us on WhatsApp</h2>
+        <div class="divider small"></div>
+        <p>Scan the QR code to message us directly.</p>
+
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/9779845094574" alt="WhatsApp QR Code">
+
+        <a href="https://wa.me/9779845094574" target="_blank" class="main-btn">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="logo">🌾</div>
+      <div>
+        <h3>Shiva Guru</h3>
+        <p>Food Products</p>
+      </div>
+    </div>
+
+    <p>© 2026 Shiva Guru Food Products. All Rights Reserved.</p>
+  </footer>
+
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+
+      <h2>Order Product</h2>
+      <p id="selectedProduct"></p>
+
+      <input type="text" id="customerName" placeholder="Your Name">
+      <input type="text" id="customerAddress" placeholder="Your Address">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <input type="text" id="customerPhone" placeholder="Contact Number">
+
+      <button class="send-btn" onclick="sendOrder()">Send to WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
