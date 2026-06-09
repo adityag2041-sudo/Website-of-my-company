@@ -1,4 +1,4 @@
-const whatsappNumber = "9779855080884;
+const whatsappNumber = "9779855080884";
 
 const products = [
   {
