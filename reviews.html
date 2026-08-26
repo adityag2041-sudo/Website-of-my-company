@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reviews | Shiva Guru Food Products</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <div class="logo">🌾</div>
+
+      <div>
+        <h2>Shiva Guru</h2>
+        <p>Food Products</p>
+      </div>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="quality.html">Quality</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="directions.html">Directions</a>
+    </nav>
+
+    <a href="products.html#order" class="nav-btn">
+      🛒 Order Now
+    </a>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Customer Reviews</h1>
+
+      <p>
+        Read what our customers say and share your own experience with us.
+      </p>
+    </section>
+
+    <section class="reviews-section">
+      <div class="reviews-container">
+
+        <div class="review-heading">
+          <h2>What Our Customers Say</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="review-grid" id="reviewList"></div>
+
+        <section class="review-form-card">
+          <h2>Add Your Review</h2>
+
+          <p>
+            Your feedback helps us improve our products and services.
+          </p>
+
+          <form id="reviewForm">
+
+            <label for="reviewName">Your Name</label>
+
+            <input
+              id="reviewName"
+              type="text"
+              maxlength="60"
+              placeholder="Enter your name"
+              required
+            >
+
+            <label for="reviewRating">Your Rating</label>
+
+            <select id="reviewRating" required>
+              <option value="">Choose a rating</option>
+              <option value="5">5 – Excellent</option>
+              <option value="4">4 – Very Good</option>
+              <option value="3">3 – Good</option>
+              <option value="2">2 – Fair</option>
+              <option value="1">1 – Poor</option>
+            </select>
+
+            <label for="reviewText">Your Review</label>
+
+            <textarea
+              id="reviewText"
+              rows="5"
+              maxlength="500"
+              placeholder="Write your experience"
+              required
+            ></textarea>
+
+            <button class="review-submit" type="submit">
+              Submit Review
+            </button>
+
+            <p class="review-message" id="reviewMessage"></p>
+          </form>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="logo">🌾</div>
+
+      <div>
+        <h3>Shiva Guru</h3>
+        <p>Food Products</p>
+      </div>
+    </div>
+
+    <p>© 2026 Shiva Guru Food Products. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
